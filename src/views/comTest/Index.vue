@@ -1,0 +1,36 @@
+<script setup>
+import {
+  reactive,
+  ref,
+  onMounted,
+  onUpdated,
+  watch,
+  watchEffect,
+  computed,
+  defineProps,
+  provide,
+} from 'vue';
+import Test3 from './Test3.tsx';
+import Test2 from './Test2.tsx';
+import Test1 from './Test1.vue';
+
+const indexData = ref(0)
+provide('indexData', indexData)
+
+const parentMethod = (data) => {
+  console.log('parendmehtod', data);
+}
+</script>
+<style scoped>
+
+</style>
+<template>
+  <div>
+    <div>3</div>
+    <Test3 toTsxSon="parentData1" @parentMethod="parentMethod" />
+    <div>2</div>
+    <Test2 toTsxSon="parentData1" @parentMethod="parentMethod" />
+    <div>1</div>
+    <Test1 toTsxSon="parentData1" @parentMethod="parentMethod" />
+  </div>
+</template>
