@@ -5,6 +5,10 @@
   import Test1 from './views/TestApi/Test1.vue';
   import Test3 from './views/TestApi/Test3.tsx';
   import Test4 from './views/TestApi/Test4.tsx';
+
+  // import { useCartStore } from '@/stores/cart_1';
+  // const cartStore = useCartStore();
+  // cartStore.addCartNum({num: 1, id: 1, name: '电视'})
 </script>
 
 <template>

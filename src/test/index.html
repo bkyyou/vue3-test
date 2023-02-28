@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body, html {
+      width: 100%;
+      height: 100%;
+    }
+    .div1 {
+      display: inline-flex;
+      width: 100%;
+    }
+
+    .div2 {
+      max-width: 200px;
+      padding-left: 20px;
+    }
+
+    .div3 {
+      word-break: keep-all;
+      display: inline-flex;
+      flex-direction: column;
+    }
+
+    span {
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="div1">
+    <div class="div2">
+      <div class="div3">
+        <div class="div4">这是一个测试这是一个测试这是一个测试这是一个测试1</div>
+        <div class="div4">这是一个测试这是一个测试这是一个测试这是一个测试2</div>
+        <div class="div4">这是一个测试这是一个测试这是一个测试这是一个测试3</div>
+      </div>
+    </div>
+    <div class="div2">
+      <div class="div3">
+        这是一个测试这是一个测试这是一个测试这是一个测试
+      </div>
+    </div>
+    <div class="div2">
+      <div class="div3">
+        这是一个测试这是一个测试这是一个测试这是一个测试
+      </div>
+    </div>
+  </div>
+</body>
+</html>

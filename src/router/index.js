@@ -89,6 +89,35 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/other/Index.vue')
     },
+    {
+      path: '/storesTest',
+      name: 'storesTest',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/storesTest/Index.vue')
+    },
+    {
+      path: '/storesTest1',
+      name: 'storesTest1',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/storesTest/Test1.vue')
+    },
+    {
+      path: '/scrolltable',
+      name: 'scrolltable',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/scrollTable/Index.vue')
+    },
+    {
+      path:'/:cathchAll(.*)',
+      name: 404,
+      component:()=>import('../views/404.vue')
+    },
   ]
 })
 

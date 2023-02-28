@@ -13,7 +13,7 @@ import {
 } from 'vue';
 
 defineProps({
-  toTsxSon: String
+  toTsxSon: String,
 })
 const emit = defineEmits(['parentMethod'])
 const indexData = inject('indexData')

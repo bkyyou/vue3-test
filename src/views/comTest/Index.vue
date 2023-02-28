@@ -31,6 +31,6 @@ const parentMethod = (data) => {
     <div>2</div>
     <Test2 toTsxSon="parentData1" @parentMethod="parentMethod" />
     <div>1</div>
-    <Test1 toTsxSon="parentData1" @parentMethod="parentMethod" />
+    <Test1 :arr="[1,2]" toTsxSon="parentData1" @parentMethod="parentMethod" />
   </div>
 </template>
