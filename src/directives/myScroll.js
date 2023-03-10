@@ -1,4 +1,4 @@
-import { over, throttle } from "lodash"
+import { throttle } from "lodash"
 const myScroll = {
   install: function(app) {
     app.directive('myscroll', {
@@ -7,9 +7,8 @@ const myScroll = {
         const self = vnode.ctx.ctx;
         // console.log('el', el)
         // console.log('binding', binding.instance.dataList, self.dataList)
-        console.log('binding', binding)
+        console.log('binding', binding.instance)
         console.log('vnode', vnode)
-        console.log(over)
         const tableWrapperDom = el.querySelector('.el-scrollbar__wrap');
         // const tableWrapperDom = el.querySelector('.el-table__body-wrapper');
         // console.log('tableWrapperDom', tableWrapperDom)
@@ -27,7 +26,7 @@ const myScroll = {
             // self.over += 15
           } 
         }, 200);
-        tableWrapperDom.addEventListener('scroll', scroll)
+        // tableWrapperDom.addEventListener('scroll', scroll)
         
       },
       updated(el, binding, vnode, prevVnode) {

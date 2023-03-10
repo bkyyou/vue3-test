@@ -9,7 +9,7 @@ import { throttle } from 'lodash'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 
-// import myscroll from '@/directives/myScroll.js';
+import myscroll from '@/directives/myScroll.js';
 
 import './assets/main.css'
 
@@ -19,7 +19,7 @@ app.use(createPinia())
 app.use(ElementPlus)
 app.use(router)
 
-// app.use(myscroll);
+app.use(myscroll);
 
 // app.directive('myscroll', {
 //   created(el, binding, vnode, prevNnode) {
