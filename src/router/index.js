@@ -130,6 +130,38 @@ const router = createRouter({
       component: () => import('../views/requestTest/Index.vue')
     },
     {
+      path: '/fileupload',
+      name: 'fileupload',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/fileUpload/Index.vue')
+    },
+    {
+      path: '/excel',
+      name: 'excel',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/excel/Index.vue')
+    },
+    {
+      path: '/word',
+      name: 'word',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/word/Index.vue')
+    },
+    {
+      path: '/bigjs',
+      name: 'bigjs',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/bigjs/Index.vue')
+    },
+    {
       path:'/:cathchAll(.*)',
       name: 404,
       component:()=>import('../views/404.vue')
