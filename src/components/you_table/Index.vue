@@ -122,7 +122,7 @@ const scroll = throttle((e) => {
     for (let i = 0; i < rowHeight.length; i++) {
       _startH += rowHeight[i]
       if (_startH >= scrollTop && _startH !== 0) {
-        _startI = i;
+        _startI = i - 1;
         break;
       }
       // if (condition) {
