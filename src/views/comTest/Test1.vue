@@ -21,6 +21,11 @@ const indexData = inject('indexData')
 // const emit = function() {
 
 // }
+onMounted(() => {
+  emit('parentMethod', 11111, (data: any) => {
+    console.log('test1', data);
+  });
+})
 </script>
 <style scoped>
 

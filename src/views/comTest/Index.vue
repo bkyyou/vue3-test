@@ -17,8 +17,11 @@ import Test1 from './Test1.vue';
 const indexData = ref(0)
 provide('indexData', indexData)
 
-const parentMethod = (data) => {
+const parentMethod = (data, cb) => {
   console.log('parendmehtod', data);
+  if (typeof(cb) === 'function') {
+    cb(2222)
+  }
 }
 </script>
 <style scoped>
