@@ -1,14 +1,17 @@
 
 
-export const reg = /(?<!(^|-))(?=(\d{3})+($|\.))(?<!(\..*))/g;
+// export const reg = /(?<!(^|-))(?=(\d{3})+($|\.))(?<!(\..*))/g;
 // const num = '-11111111111.11111';
-export const formattingNum = (str) => str.replace(reg, ',');
+// export const formattingNum = (str) => str.replace(reg, ',');
 // console.log(formattingNum(num));
 
-export const pwdreg = /^((?=.*?[A-Z]+)(?=.*?[a-z]+)|(?=.*?\d+)(?=.*?[a-z]+)|(?=.*?[A-Z]+)(?=.*?\d+)).{6,}$/g;
+// export const aa = /^((?=[A-Z]+)(?=[a-z]+)|(?=\d+)(?=[a-z]+)|(?=[A-Z]+)(?=\d+)).{6,}$/g;
+// 匹配位置是不消耗字符的，所以 第一个 ?= 还是从开头开始匹配，所以  aa.test('ABCabc')  还是 false
+ const aa = /(?=.*[A-Z]+)(?=[a-z]+)/g 
+// export const pwdreg = /^((?=.*?[A-Z]+)(?=.*?[a-z]+)|(?=.*?\d+)(?=.*?[a-z]+)|(?=.*?[A-Z]+)(?=.*?\d+)).{6,}$/g;
 
-// console.log(pwdreg.test('Ab'));
-// console.log(num.replace(pwdreg, ','));
+console.log(aa.test('ABCabc'));
+console.log('ABCabc'.replace(aa, ','));
 
 var Num = -11111111.111111;
 
