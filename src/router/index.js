@@ -140,10 +140,8 @@ const router = createRouter({
     {
       path: '/excel',
       name: 'excel',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/excel/Index.vue')
+      // webpackPrefetch: 10 表示优先级是 10， 越大优先级越高
+      component: () => import( /** webpackChunckName: "excel"  */ /** webpackPrefetch: true */ '../views/excel/Index.vue')
     },
     {
       path: '/word',
@@ -160,6 +158,19 @@ const router = createRouter({
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/bigjs/Index.vue')
+    },
+    {
+      path: '/testmydialog',
+      name: 'testmydialog',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/testmydialog/Index.vue')
+    },
+    {
+      path: '/download',
+      name: 'download',
+      component: () => import('../views/download/Index.vue')
     },
     {
       path:'/:cathchAll(.*)',

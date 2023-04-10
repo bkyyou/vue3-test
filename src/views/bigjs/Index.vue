@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import {
   reactive,
   ref,
@@ -10,7 +10,10 @@ import {
   defineProps,
   provide,
 } from 'vue';
-import Big from "big.js";
+import Big from 'big.js';
+// const Big = require('big.js');
+
+let a = 1;
 
 console.log(new Big('0.1').add(0.2).toFixed(2));
 console.log(new Big('12').cmp(10));
@@ -25,7 +28,7 @@ const counterSign = {
 }
 // const reg = /(\d+|\+|\-|\*/)/;
 const errtip = '传入的参数有误';
-const counterCore = (str) => {
+const counterCore = (str: string) => {
   
   if (typeof(str) !== 'string') {
     console.error('请传入字符串');
@@ -51,7 +54,7 @@ const counterCore = (str) => {
 console.log(counterCore('1000+2000+1-2- 11'))
 
 const counter = {
-  plus(arr) {
+  plus(arr: []) {
     return counter(arr.join('+'));
   },
   minus(arr) {
