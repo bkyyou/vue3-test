@@ -37,8 +37,9 @@ onMounted(() => {
 </style>
 <template>
   <div>
-    <div @click="changeFlag">更改展示</div>
+    <Test1 ref="test1Dom"/>
 
+    <div @click="changeFlag">更改展示</div>
     <keep-alive>
       <Test1 ref="test1Dom" v-if="flag"/>
       <Test2 v-else />

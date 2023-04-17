@@ -6,6 +6,10 @@ body, html {
   height: 100%;
 }
 
+body {
+  padding-left: 30px;
+}
+
 .common_point {
   cursor: pointer;
 }
