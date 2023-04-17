@@ -1,5 +1,11 @@
 import $http from "../utils/http";
 import { saveAs } from 'file-saver';
+// 不带 default
+export * from './user.js';
+// 带 default
+// export * as user from './user.js';
+
+// console.log(user);;
 
 export const  download = async () => {
   return new Promise(reslove => {
@@ -38,4 +44,7 @@ export const  download = async () => {
       reslove();
     })
   })
+}
+export const  download2 = async (params) => {
+  
 }
