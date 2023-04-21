@@ -173,6 +173,11 @@ const router = createRouter({
       component: () => import('../views/download/Index.vue')
     },
     {
+      path: '/testsearchtable',
+      name: 'testsearchtable',
+      component: () => import('../views/testsearchtable/Index.vue')
+    },
+    {
       path:'/:cathchAll(.*)',
       name: 404,
       component:()=>import('../views/404.vue')
