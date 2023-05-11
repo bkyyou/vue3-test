@@ -55,6 +55,7 @@ onMounted(() => {
 defineExpose({
   search,
   reset,
+  formRef,
 })
 
 
