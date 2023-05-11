@@ -48,3 +48,10 @@ export const  download = async () => {
 export const  download2 = async (params) => {
   
 }
+export const  upload = async (params) => {
+  return new Promise(resolve => {
+    $http.post('/testMultipleFiles', params).then(res => {
+      resolve()
+    })
+  })
+}
