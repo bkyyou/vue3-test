@@ -132,6 +132,9 @@ const router = createRouter({
     {
       path: '/fileupload',
       name: 'fileupload',
+      meta: {
+        cache: false,
+      },
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
@@ -176,6 +179,26 @@ const router = createRouter({
       path: '/testsearchtable',
       name: 'testsearchtable',
       component: () => import('../views/testsearchtable/Index.vue')
+    },
+    {
+      path: '/testmyloading',
+      name: 'testmyloading',
+      component: () => import('../views/testmyloading/Index.vue')
+    },
+    {
+      path: '/testcomponentoptions',
+      name: 'testcomponentoptions',
+      component: () => import('../views/testComponentOptions/Index.vue')
+    },
+    {
+      path: '/testdrag',
+      name: 'testdrag',
+      component: () => import('../views/dragTest/Index.vue')
+    },
+    {
+      path: '/testdrag2',
+      name: 'testdrag2',
+      component: () => import('../views/dragTest/Index2.vue')
     },
     {
       path:'/:cathchAll(.*)',
