@@ -10,6 +10,7 @@ import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 
 import myscroll from '@/directives/myScroll.js';
+import myLoading from '@/directives/myLoading.js';
 
 import './assets/main.css'
 
@@ -20,6 +21,7 @@ app.use(ElementPlus)
 app.use(router)
 
 app.use(myscroll);
+app.use(myLoading);
 
 // app.directive('myscroll', {
 //   created(el, binding, vnode, prevNnode) {
