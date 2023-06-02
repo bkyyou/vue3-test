@@ -14,8 +14,9 @@ body, html {
   } */
 
 body {
-  padding-left: 100px;
+  /* padding-left: 100px; */
   /* box-sizing: border-box; */
+  padding: 20px 20px;
 }
 
 .common_point {

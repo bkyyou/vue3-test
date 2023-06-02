@@ -11,6 +11,10 @@ import {
   provide,
 } from 'vue';
 import Drag from "@/components/drag/Index.vue";
+import Index3 from './Index3.vue';
+import Index4 from './Index4.vue';
+import Index5 from './Index5.vue';
+import SmoothDnd from './SmoothDnd.vue';
 
 const dragRef = ref(null);
 
@@ -42,6 +46,16 @@ const mouseUpCb = (e, posi) => {
       <div class="content">111</div>
     </Drag>
   </div>
+
+  <Index3 />
+
+  <Index5 />
+
+  <Index4 />
+
+  <SmoothDnd />
+
+  <!-- <div draggable="true">ceshi</div> -->
 </template>
 
 <style scoped>
@@ -57,4 +71,5 @@ const mouseUpCb = (e, posi) => {
   width: 100px;
   height: 100px;
 }
+
 </style>
