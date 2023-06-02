@@ -201,6 +201,11 @@ const router = createRouter({
       component: () => import('../views/dragTest/Index2.vue')
     },
     {
+      path: '/canvas',
+      name: 'canvas',
+      component: () => import('../views/canvas/Index.vue')
+    },
+    {
       path:'/:cathchAll(.*)',
       name: 404,
       component:()=>import('../views/404.vue')
