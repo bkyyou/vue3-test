@@ -1,14 +1,19 @@
 <script setup>
-  import { RouterLink, RouterView } from 'vue-router'
-  import HelloWorld from './components/HelloWorld.vue'
+  import { onMounted } from 'vue';
+  import { RouterLink, RouterView } from 'vue-router';
+  import HelloWorld from './components/HelloWorld.vue';
   import Test2 from './views/TestApi/Test2.vue';
   import Test1 from './views/TestApi/Test1.vue';
-  import Test3 from './views/TestApi/Test3.tsx';
-  import Test4 from './views/TestApi/Test4.tsx';
+  // import Test3 from './views/TestApi/Test3.tsx';
+  // import Test4 from './views/TestApi/Test4.tsx';
 
   // import { useCartStore } from '@/stores/cart_1';
   // const cartStore = useCartStore();
   // cartStore.addCartNum({num: 1, id: 1, name: '电视'})
+
+  onMounted(() => {
+    window.document.documentElement.setAttribute('data-skin', 'default-theme')
+  })
 </script>
 
 <template>
@@ -26,7 +31,9 @@
   
   </header> -->
 
-  <RouterView />
+  <config-provider :theme="{'theme-color': 'red'}">
+    <RouterView />
+  </config-provider>
   <!-- <Test2></Test2> -->
   <!-- <Test1></Test1> -->
   <!-- <Test3></Test3> -->

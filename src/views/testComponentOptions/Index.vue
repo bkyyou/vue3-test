@@ -6,7 +6,7 @@ export default {
       a: 1,
       b: 2
     }
-  }
+  },
   mehtods: {
     changeA() {
       this.a = this.a + 1;

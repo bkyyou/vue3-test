@@ -1,0 +1,21 @@
+@import "./variable.scss";
+@import "./mixin.scss";
+
+.header {
+  width: 100%;
+  min-height: 30px;
+}
+
+.button {
+  min-width: 40px;
+}
+
+.background-theme {
+  // background-color: $theme-color;
+  @include get-backcolor('theme-color')
+}
+
+.button-parmary {
+  // background-color: $button-primary;
+  @include get-backcolor('button-primary')
+}

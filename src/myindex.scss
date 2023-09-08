@@ -1,0 +1,14 @@
+// $theme-color: skyblue; 
+// $button-primary: violet;
+$theme: (
+  skin1: (
+    theme-color: var(--data-theme-color, rgb(255, 149, 0)),
+    button-primary: var(--data-button-primary, yellow),
+  ),
+  skin2: (
+    theme-color: pink,
+    button-primary: rgb(255, 192, 230),
+  )
+);
+
+@import "@/myui/css/index.scss";

@@ -11,8 +11,12 @@ import 'element-plus/dist/index.css'
 
 import myscroll from '@/directives/myScroll.js';
 import myLoading from '@/directives/myLoading.js';
+import myui from '@/myui/index.js';
 
-import './assets/main.css'
+// import '@/myui/css/index.scss';
+// 换肤
+import './myindex.scss';
+import './assets/main.css';
 
 const app = createApp(App)
 
@@ -22,6 +26,7 @@ app.use(router)
 
 app.use(myscroll);
 app.use(myLoading);
+app.use(myui);
 
 // app.directive('myscroll', {
 //   created(el, binding, vnode, prevNnode) {

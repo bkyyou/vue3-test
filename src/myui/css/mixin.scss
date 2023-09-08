@@ -1,0 +1,17 @@
+// @mixin 来定义方法
+// 生成背景色的方法
+@mixin get-backcolor($color) {
+  // $themename 属性名,  $theme 属性值
+  @each $themename, $theme in $theme {
+    // 判断 当 html 上的 data-skin 的值 等于 $themename 时
+    [data-skin='#{$themename}'] & {
+      // background-color: map-get($map: $theme, $key: 'theme-color');
+      background-color: map-get($theme, $color);
+    }
+  }
+}
+
+// 生成字体色的方法
+@mixin get-fontcolor() {
+
+}

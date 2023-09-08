@@ -1,0 +1,11 @@
+// $theme-color: red !default; // !default 为了覆盖变量
+// $button-primary: blue !default;
+
+// scss 对象
+$theme:(
+  default-theme: (
+    // 这是一套所有的相关颜色
+    theme-color: red,
+    button-primary: blue,
+  )
+) !default;
